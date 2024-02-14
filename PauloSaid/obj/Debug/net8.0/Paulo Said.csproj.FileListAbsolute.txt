@@ -1,0 +1,30 @@
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\appsettings.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.staticwebassets.runtime.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.exe
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.deps.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.runtimeconfig.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.dll
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\bin\Debug\net8.0\Paulo Said.pdb
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.AssemblyInfoInputs.cache
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.AssemblyInfo.cs
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.csproj.CoreCompileInputs.cache
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.RazorAssemblyInfo.cache
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.RazorAssemblyInfo.cs
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets\msbuild.Paulo Said.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets\msbuild.build.Paulo Said.props
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Paulo Said.props
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Paulo Said.props
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\scopedcss\bundle\Paulo Said.styles.css
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\scopedcss\projectbundle\Paulo Said.bundle.scp.css
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.dll
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\refint\Paulo Said.dll
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.pdb
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\Paulo Said.genruntimeconfig.cache
+C:\Users\paulo\source\repos\Demo2\Paulo Said\Paulo Said\obj\Debug\net8.0\ref\Paulo Said.dll

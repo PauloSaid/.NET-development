@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Paulo Said</title>
+</head>
+<body class="gradient-background">
+    <div class="d-flex justify-content-center align-items-center">
+    <div class="clock shadow-lg">
+        
+        <div>
+            <span id="hours">00</span>
+            <span class="time">Hours</span>
+        </div>
+
+        <div>
+            <span id="minutes">00</span>
+            <span class="time">Minutes</span>
+        </div>
+        
+        <div>
+            <span id="seconds">00</span>
+            <span class="time">Seconds</span>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .clock {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 200px;
+        width: 550px;
+        background-color: rgba(248, 249, 250, 0.9);
+        border-radius: 5px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, .9);
+        padding: 20px;
+        color: #333;
+    }
+
+    .clock div {
+        height: 170px;
+        width: 150px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: rgba(5, 5, 5, 0.8);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+        border-radius: 7px;
+        letter-spacing: 3px;
+    }
+
+    .clock span {
+        font-weight: bolder;
+        font-size: 60px;
+    }
+
+    .clock span.time {
+        font-size: 10px;
+    }
+</style>
+
+
+<script>
+    const hours = document.getElementById('hours');
+    const minutes = document.getElementById('minutes');
+    const seconds = document.getElementById('seconds');
+
+    const clock = setInterval(function time() {
+        let dateToday = new Date();
+        let hr = dateToday.getHours();
+        let min = dateToday.getMinutes();
+        let sec = dateToday.getSeconds();
+
+        if (hr < 10)
+            hr = '0' + hr;
+
+        if (min < 10)
+            min = '0' + min;
+
+        if (sec < 10)
+            sec = '0' + sec;
+
+        hours.textContent = hr;
+        minutes.textContent = min;
+        seconds.textContent = sec;
+    })
+</script>
