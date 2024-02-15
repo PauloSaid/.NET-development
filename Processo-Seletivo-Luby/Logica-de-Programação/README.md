@@ -168,20 +168,109 @@ public int CalcularDiferencaData(string data1, string data2)
 ---
 
 ## Questão07:
+1.7 Implemente a função abaixo que retorna um novo vetor com todos elementos pares do vetor informado.
+```c#
+public int[] ObterElementosPares(Array array)
+    {
+        List<int> newArray = new();
+        foreach (int element in array)
+        {
+            if (element % 2 == 0)
+                newArray.Add(element);
+        }
 
+        return newArray.ToArray();
+    }
+```
 
 ---
 
 ## Questão08:
-
+1.8 Implemente a função abaixo que deve buscar um ou mais elementos no vetor que contém o valor ou parte do valor informado na busca.
+```c#
+public static string[] BuscarPessoa(Array array, string nome)
+    {
+        List<string> newArray = new();
+        foreach (string pessoa in array)
+        {
+            if (pessoa.ToLower().Contains(nome.ToLower()))
+            {
+                newArray.Add(pessoa);
+            }
+        }
+        return newArray.ToArray();
+    } 
+```
 
 ---
 
 ## Questão09:
+1.9 Implemente a função abaixo que obtém uma string com números separados por vírgula e transforma em um array de array de inteiros com no máximo dois elementos.
+```c#
+public static int[][] TransformarEmMatriz(string lista) //funcao deve retornar uma matriz para armazenar todos arrays
+    {
+        string[] numeros = lista.Split(','); // Separa a string de numeros
+        List<int[]> matriz = new(); //Lista de arrays
 
+        for (int i = 0; i < numeros.Length; i += 2)
+        {
+            int[] arrayNumero = new int[2];
+            arrayNumero[0] = int.Parse(numeros[i]);
+            arrayNumero[1] = i + 1 < numeros.Length ? int.Parse(numeros[i + 1]) : 0;
+            // Por partes. Primeiramente, verificamos se i + 1 e menor que o tamanho do array, garantindo que estamos mexendo com um indice valido
+            // apos isso, vemos se o proximo valor nao e nulo, se for, atribuimos i + 1 como 0.
+            matriz.Add(arrayNumero);
+        }
+
+        return matriz.ToArray();
+    }
+```
 
 ---
 
 ## Questão10:
+1.10 Implemente a função abaixo que compara dois vetores e cria um novo vetor com os elementos faltantes de ambos.
+```c#
+public int[] ObterElementosFaltantes(int[] array1, int[] array2)
+    {
+        List<int> lista = new();
+        foreach (var element in array1)
+        {
+            bool encontrado = false;
+            foreach (var element2 in array2)
+            {
+                if (element == element2)
+                {
+                    encontrado = true;
+                    break;
+                }
+            }
+            if (!encontrado)
+            {
+                lista.Add(element);
+            }
+        }
+
+        foreach (var element in array2)
+        {
+            bool encontrado = false;
+            foreach (var element1 in array1)
+            {
+                if (element == element1)
+                {
+                    encontrado = true;
+                    break;
+                }
+            }
+            if (!encontrado)
+            {
+                lista.Add(element);
+            }
+        }
+        return lista.ToArray();
+    }
+```
+
+
 
 
