@@ -148,7 +148,22 @@ public string CalcularValorComDescontoFormatado(string valor, string porcentagem
 ---
 
 ## Questão06:
-
+1.6 Implemente a função abaixo que obtém duas string de datas e calcula a diferença de dias entre elas.
+```c#
+public int CalcularDiferencaData(string data1, string data2)
+    {
+        DateTime data1Formatada = DateTime.ParseExact(data1, "ddMMyyyy", null);
+        DateTime data2Formatada = DateTime.ParseExact(data2, "ddMMyyyy", null);
+        
+        int diferenca;
+        if(data1Formatada.DayOfYear > data2Formatada.DayOfYear)
+            diferenca = data1Formatada.DayOfYear - data2Formatada.DayOfYear;
+        else
+            diferenca = data2Formatada.DayOfYear - data1Formatada.DayOfYear;
+        
+        return diferenca;
+    }
+```
 
 ---
 
