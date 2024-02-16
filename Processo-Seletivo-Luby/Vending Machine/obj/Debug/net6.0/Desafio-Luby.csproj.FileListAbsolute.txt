@@ -1,0 +1,15 @@
+/home/paulo/Desktop/Desafio-Luby/bin/Debug/net6.0/Desafio-Luby
+/home/paulo/Desktop/Desafio-Luby/bin/Debug/net6.0/Desafio-Luby.deps.json
+/home/paulo/Desktop/Desafio-Luby/bin/Debug/net6.0/Desafio-Luby.runtimeconfig.json
+/home/paulo/Desktop/Desafio-Luby/bin/Debug/net6.0/Desafio-Luby.dll
+/home/paulo/Desktop/Desafio-Luby/bin/Debug/net6.0/Desafio-Luby.pdb
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.csproj.AssemblyReference.cache
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.GeneratedMSBuildEditorConfig.editorconfig
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.AssemblyInfoInputs.cache
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.AssemblyInfo.cs
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.csproj.CoreCompileInputs.cache
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.dll
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/refint/Desafio-Luby.dll
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.pdb
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/Desafio-Luby.genruntimeconfig.cache
+/home/paulo/Desktop/Desafio-Luby/obj/Debug/net6.0/ref/Desafio-Luby.dll
