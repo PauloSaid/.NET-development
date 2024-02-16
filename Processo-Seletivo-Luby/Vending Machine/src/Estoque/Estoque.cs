@@ -52,6 +52,7 @@ class Estoque
             {
                 item.Estoque -= quantidade;
                 Console.WriteLine("Compra realizada com sucesso!");
+                Console.WriteLine("Digite qualquer tecla para continuar");
                 return true;
 
             } else
