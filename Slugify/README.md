@@ -62,3 +62,13 @@ builder.Services.AddRouting(options =>
 );
 ```
 This code configures the routing system to use a custom parameter transformer for the "slugify" constraint.
+
+
+And finally, changing our map controller route by adding the 'slugify':
+```c#
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller:slugify=Home}/{action:slugify=Index}/{id?}");
+```
+
+That's all.
