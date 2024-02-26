@@ -19,10 +19,9 @@ Implementing proper security measures in .NET applications, such as input valida
 ### 🛑How to prevent CSRF🛑:
 ASP.NET provides an ValidateAntiForgeryToken attribute that can be applied to controller actions to validate that the request is not a result of a CSRF attack. Anyway, instead of adding this attribute to every controller, let's incremeating this on your Program.cs file:
 ```c#
-services.AddMvc(options =>
-{
-    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
-});
+builder.Services.AddControllersWithViews(options =>
+    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute())
+);
 ```
 
 By following this step, you can help prevent CSRF attacks in your .NET applications by ensuring that requests originate from your site and are not forged by malicious third parties.
