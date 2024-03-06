@@ -26,7 +26,7 @@ Integration testing is a type of software testing where individual units are com
 
 Automated testing refers to software tests that are executed automatically, without manual intervention. They are often used in conjunction with agile development practices to ensure code quality.
 
-#### Load Testing
+### Load Testing
 
 Load testing is a type of performance testing where the software is subjected to a significant workload to evaluate its behavior under intensive use conditions.
 
