@@ -1,18 +1,20 @@
-# Upload Image: Guide.
+# Guide: How to Upload Images in Your .NET Application
 
 This guide will teach you how to upload images in your .net application.
 
 ### Model
 
-In your model.cs, we're incrementing a field IFormFile, that will be used to upload your file.
-It's important to remember that this field must not be mapped into your database.
-**OBS.: The code for everything it's inside the folders of this repository.**
+In your Model.cs, add a property of type IFormFile to represent the uploaded file. This property will be used to upload the file, but should not be mapped to your database.
 
 ### Controllers
 
-Inside our controller we have to create a Task so we can upload the files. Posteriorly, checking the model state in the task create.
+In your controller, create a method to handle the file upload. Use a Task to asynchronously handle the file upload process. Ensure to check the model state to validate the uploaded file.
 
 ### View
 
-To avoid our image of being nullable on display, inside the view code you have to add
-enctype attribute at the form. Also, add one small script on create.cshtml of your controller.
+In your view, ensure that the form element includes the enctype="multipart/form-data" attribute to support file uploads. Additionally, add a script in your create.cshtml file to handle the file upload.
+
+
+---
+
+This guide provides a basic example of how to upload images in your .NET application. Adjustments may be needed based on your specific requirements and architecture.
