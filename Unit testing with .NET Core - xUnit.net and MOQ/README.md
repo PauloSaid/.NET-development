@@ -10,8 +10,17 @@
 
 • [Load Testing](#load-testing)
 
-• [xUnit.net](#xunit.net)
+## Frameworks
 
+• [xUnit](#xunit)
+
+• [Moq](#moq)
+
+## Getting Started
+
+• [Creating a Project](#creating-a-project)
+
+• [First Test](#first-test)
 
 ---
 
@@ -32,13 +41,15 @@ Automated testing refers to software tests that are executed automatically, with
 
 Load testing is a type of performance testing where the software is subjected to a significant workload to evaluate its behavior under intensive use conditions.
 
-### xUnit.net
+---
+
+### xUnit
 
 The xUnit testing framework is the premier framework for building automated tests in C# and .NET.
 
 XUnit encourages the use of test classes with constructor injection. This allows for better management of test dependencies and integration with dependency injection frameworks, facilitating easier and more modular testing.
 
-For installation porpuses, you can [learn how to download xUnit.net](#xunit.net-installation)
+For installation porpuses, you can [learn how to download xUnit.net](#xunit-installation)
 
 ### MOQ
 
@@ -48,7 +59,9 @@ Because of this, we use MOQ.
 
 Click [here](#moq-installation) for installation.
 
-### xUnit.net Installation
+---
+
+### xUnit Installation
 
 Framework:
 ```bash
@@ -66,3 +79,30 @@ Framework:
 ```bash
 	Install-Package Moq
 ```
+
+---
+
+
+### Creating a Project
+
+From the command line, create a folder then create a project using dotnet new xunit.
+
+### First testing
+
+For good practing, it's important to allocate your code in three different parts.
+Arrange: Create objects, instantiate, entities...
+Act: Action, execute what you want to test.
+Assert: Validate if the result it is what you are expectating.
+
+Simple test:
+```csharp
+	// Arrange
+		var controller = new TestController();
+
+	// Act
+		var result = controller.Index();
+
+	// Assert
+		Assert.IsType<ViewResult>(result);
+```
+Use `dotnet test` for run.
