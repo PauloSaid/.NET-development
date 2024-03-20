@@ -1,0 +1,14 @@
+﻿@model CRUD.Models.Product
+
+<div class="align-content-center text-center">
+    <div class="display-1 text-danger">WARNING!</div>
+    <div class="display-5">Are you sure removing @Html.DisplayFor(model => model.Name)? <br /> <br /> This Action will be irreversible</div>
+
+    <br />
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-dark">Back to List</a>
+    </form>
+</div>

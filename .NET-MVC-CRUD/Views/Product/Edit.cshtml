@@ -1,0 +1,74 @@
+﻿@using CRUD.Models
+@model Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Edit Product</h4>
+
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Edit">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="Id"/>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ImageUpload" class="control-label"></label>
+
+                <div class="input-group custom-file-button">
+                    <input type="file" class="form-control" id="ImgUpload" asp-for="ImageUpload">
+                    <label class="input-group-text" for="ImgUpload">Escolher</label>
+                </div>
+
+                <span asp-validation-for="ImageUpload" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnitPrice" class="control-label"></label>
+                <input asp-for="UnitPrice" class="form-control" />
+                <span asp-validation-for="UnitPrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Active"></label>
+                <input asp-for="Active" class="form-check-input" />
+            </div>
+
+            <a asp-action="Index" class="btn btn-secondary">Return</a>
+            <input type="submit" value="Edit" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $("#ImgUpload").attr("data-val", "true");
+        $("#ImgUpload").attr("data-val-required", "Upload an image"
+    </script>
+}

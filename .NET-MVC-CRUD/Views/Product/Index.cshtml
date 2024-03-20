@@ -1,0 +1,81 @@
+﻿@using CRUD.Models;
+@model IEnumerable<Product>
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="text-dark">Products</h1>
+        <a asp-action="Create" class="btn btn-outline-dark">Create</a>
+    </div>
+
+    <div class="row mt-5">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body shadow-sm bg-primary bg-opacity-25">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">Price: $@product.UnitPrice</p>
+                        <p class="card-text">Amount: @product.Amount</p>
+                        @if (!string.IsNullOrEmpty(product.Image))
+                        {
+                            <img src="@Url.Content("~/images/" + product.Image)" style="height: 100px; width: 61px" />
+                        }
+                        @Html.DisplayFor(modelProduct => product.Active)
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary btn-sm shadow-sm me-lg-3">Edit</a>
+                        <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-info btn-sm shadow-sm me-lg-3">Details</a>
+                        <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger btn-sm shadow-sm">Delete</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detailsModal" data-id="@product.Id" data-name="@product.Name" data-unitprice="@product.UnitPrice" data-description="@product.Description"><spam class="fa fa-search"></spam></button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsModalLabel">Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><strong>ID:</strong> <span id="productId"></span></p>
+                        <p><strong>Name:</strong> <span id="productName"></span></p>
+                        <p><strong>Price:</strong> $ <span id="productUnitPrice"></span></p>
+                        <p><strong>Description:</strong><span id="productDescription"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#detailsModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); 
+                var id = button.data('id'); 
+                var name = button.data('name'); 
+                var unitprice = button.data('unitprice'); 
+                var description = button.data('description');
+
+                $('#productId').text(id);
+                $('#productName').text(name);
+                $('#productUnitPrice').text(unitprice);
+                $('#productDescription').text(description);
+            });
+        });
+    </script>
+}

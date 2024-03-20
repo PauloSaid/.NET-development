@@ -1,0 +1,27 @@
+﻿@model CRUD.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="mt-4">Details</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Product: @Html.DisplayFor(model => model.Name)</h2>
+                    <p class="card-text"><strong>Description:</strong> @Html.DisplayFor(model => model.Description)</p>
+                    <img src="@Url.Content("~/images/" + Model.Image)" class="img-fluid" style="max-height: 200px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+            <a href="@Url.Action("Edit", new { id = Model?.Id })" class="btn btn-primary">Edit</a>
+        </div>
+    </div>
+</div>
